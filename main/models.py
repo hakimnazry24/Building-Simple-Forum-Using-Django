@@ -31,7 +31,7 @@ class Category(models.Model):
     title = models.CharField(max_length=50)
     slug = models.SlugField(max_length=400, unique=True, blank=True)
     description = models.TextField(default='description')
-    description = models.TextField(default=description)
+    
 
     class Meta:
         verbose_name_plural = 'categories'
